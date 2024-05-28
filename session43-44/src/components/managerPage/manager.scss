@@ -1,0 +1,256 @@
+li{
+    list-style: none;
+}
+.navbar{
+    margin-top: 100px;
+    display: flex;
+    background-color: rgb(26, 25, 25);
+    height: 50px;
+    align-items: center;
+    justify-content: space-between;
+    .navigation{
+        .list_nav{
+            display: flex;
+            color: #fff;
+            gap: 30px;
+            font-size: 16px;
+            padding-top: 5px;
+        }
+        .list_nav li{
+            display: flex;
+            gap:5px;
+    }
+}
+    .represent{
+        display: flex;
+        align-items: center;
+        background-color: white;
+        border: 1px solid gray;
+        height: 30px;
+        margin-right: 110px;
+        font-size: 14px;
+        font-weight: 500;
+        padding: 10px;
+        border-radius:35% 35% 35% 35%;
+        .imgRep{
+            height: 20px;
+            width: 20px;
+            color: rgb(73, 72, 70);
+        }
+    }
+}
+// Header
+.header{
+    background-color: rgb(41, 39, 39);
+    width: 18%;
+    height: auto;
+    border: 1px solid black;
+    position: absolute;
+    .addItem{
+        background-color: #fff;
+        width: 80%;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        padding-left: 15px;
+        margin-left: 25px;
+        font-weight: 700;
+        margin-top: 15px;
+        
+    }
+    .Das{
+        color: #fff;
+        margin-top: 20px;
+        border-top: 2px solid rgb(31, 31, 31);
+        .tiD{
+            display: flex;
+            align-items: center;
+            gap:5px;
+        }
+        .titleDas{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            margin-top: 20px;
+            padding-left: 15px;
+            padding-right: 20px;
+            padding-bottom: 10px;
+        }
+        .listHead{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+    .Category{
+        color: #fff;
+        margin-top: 20px;
+        padding-left: 15px;
+        padding-bottom: 230px;
+        .listCategory{
+            li{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding-right: 20px;
+                padding-top: 20px;
+                border-top: 2px solid rgb(31, 31, 31);
+                padding-bottom: 5px;
+            }
+            .liCa{
+                display: flex;
+                align-items: center;
+                gap: 5px;
+            }
+        }
+    }
+}
+//SearchBar
+.SearchBar{
+    margin-left: 18%;
+    display: flex;
+    flex-direction: row;
+    padding: 22px 22px;
+    .addPost{
+        font-size: 18px;
+        font-weight: 700;
+
+    }
+    .SearchBarLeft{
+        display: flex;
+        margin-left: 20px;
+        width: 50%;
+        gap: 5%;
+    }
+    .font{
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        font-size: 14px;
+    }
+    .InpSearchBar{
+        display: flex;
+        width: 25%;
+        margin-left:25%;
+        align-items: center;
+        .iconInp{
+            position: absolute;
+            margin-left: 18%;
+            height: 30px
+        }
+    }
+    .InpSearch{
+        width: 150%;
+        padding-left: 10px;
+    }
+}
+//Main
+.main{
+    margin-left: 18%;
+    background-color: rgb(218, 214, 214);
+    height: 855px;
+    .parameterTable{
+        display: flex;
+        justify-content:space-around;
+        .parameter{
+            display: flex;
+            align-items: center;
+            gap:8px;
+            padding: 30px 120px 25px 25px;
+            background-color: #fff;
+            margin-top: 20px;
+            border-radius: 4%;
+            .iconPara{
+                font-size: 35px;
+            }
+            .iconbag{
+                color: #e2550f;
+            }
+            .iconshop{
+                color: #c20fe2;
+            }
+            .iconuser{
+                color: rgb(22, 159, 22);
+            }
+            .iconlist{
+                color: #c20fe2;
+            }
+            .titlePara div:first-child{
+                font-size: 12px;
+                color: rgb(145, 142, 142);
+            }   
+            .titlePara div:last-child{
+                font-size: 21px;
+                font-weight: 700;
+            }   
+        }
+    }
+
+    .fromPost{
+        background-color: #fff;
+        width: 96%;
+        height: 695px;
+        margin-left: 2%;
+        margin-top: 30px;
+        border-radius: 1%;
+        .titleFrom{
+            padding-top: 35px;
+            padding-left: 30px;
+        }
+        .titleFrom p{
+            font-size: 14px;
+            color: gray;
+        }
+        .warningTitle{
+            border: 1px solid red;
+            font-size: 14px;
+            color: red;
+            padding: 15px;
+            margin-left: 30px;
+            border-radius: 1%;
+            width: 93%;
+            .warningIcon{
+                font-size: 21px;
+            }
+        }
+        .table{
+            margin-left: 30px;
+            margin-top: 30px;
+            width: 93%;
+            border: 1px solid rgb(210, 207, 207);
+            .th th{
+                background-color: rgb(164, 160, 160);
+            }
+            .btnEdit{
+                background-color: blue;
+                color:white;
+                border: none;
+                margin-right: 10px;
+                border-radius: 5px;
+            }
+            .btnDel{
+                background-color: rgb(255, 106, 0);
+                color:white;
+                border: none;
+                border-radius: 5px;
+            }
+        }
+        .nextPage{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            margin-top: 10px;
+            .nextPageDiv{
+                padding: 5px;
+                border: 1px solid rgb(128, 124, 124);
+                font-size: 12px;
+            }
+            .nextPageTwo{
+                background-color: blue;
+                color: #fff;
+            }
+        }
+    }
+    
+}

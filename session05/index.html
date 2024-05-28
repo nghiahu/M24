@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        #background {
+            border: 1px solid black;
+            width: 400px;
+            margin-top: 200px;
+            margin-left: 500px;
+            padding: 20px;
+        }
+        .input {
+            display: flex;
+            gap: 20px;
+            padding: 20px;
+            padding-bottom: 40px;
+        }
+        #but{
+            margin-left: 20px;
+            padding: 5px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="background">
+
+    </div>
+    <script>
+        let times = 5
+        let array = ["hoa","hao","han","nam","anh","tan","thu","tai","tho"]
+        const random = array[Math.floor(Math.random() * array.length)]
+        const text = random.split("")
+        console.log(random)
+        let str = ""
+        for(let i=0;i<text.length;i++){
+            str += "*"
+        }
+        function render(){
+            let html=""
+            html = 
+            `
+            <div>The word is: ${str}</div>
+            <div class="input">
+                <input type="text" id="inp">
+                <div>Remaining guess: ${times}</div>
+            </div>
+            <button type="button" id="but" onclick="guess()">Guess</button>
+            `
+            document.getElementById('background').innerHTML = html
+        }
+        render();
+        function guess(){
+            if(times < 1 ){
+                alert("bạn đẫ thua cuộc")
+                location.reload();
+            }
+            const inpValue = document.getElementById('inp').value
+            if(inpValue === random){
+                alert("bạn đẫ giành chiến thắng")
+                location.reload();
+            }else{
+                times-=1
+                render();
+            }
+        }
+    </script>
+</body>
+</html>

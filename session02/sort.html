@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+        sort : săp xếp
+     -->
+     <script>
+        let numbers = [3,2,11,5,7];
+        let students = ["minh","an","hồng"];
+        let result = numbers.sort((a,b)=>a - b) 
+        console.log(numbers);
+
+        let sortName = students.sort()
+        console.log(sortName)
+
+
+        let std = [
+        {
+            name:"hoa",
+            id:1
+        },
+        {
+            name:"bình",
+            id:2
+        },
+        {
+            name:"lan",
+            id:3
+        },
+        ]
+        let sortstd = std.sort((a,b) => {
+            if(a.name>b.name){
+                return 1
+            }else if(a.name<b.name){
+                return -1
+            }else{
+                return 0
+            }
+        })
+        console.log(sortstd)
+     </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function hasPrimeNumber(array){
+            let result = array.every((item) => {
+                if(item >= 2){
+                    for(let i = 2;i <= Math.sqrt(item);i++){
+                        if(item % i === 0){
+                            return false;
+                        }
+                        }
+                        return true
+                    }
+            })
+            if(result){
+                return true
+            }else{
+                return false
+            }
+        }
+        console.log(hasPrimeNumber([2, 3, 5, 7, 11]))
+        console.log(hasPrimeNumber([4, 6, 8, 9, 10]))
+    </script>
+</body>
+</html>

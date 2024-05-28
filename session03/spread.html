@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let numbers = [5,6,7,8,9];
+        let newArray = [...numbers] //tạo địa chỉ ô nhớ mới
+     // let newArray = numbers gắn địa chỉ
+      numbers.push(4);
+      console.log(newArray)
+
+      let obj1={
+        name:'minh',
+        address:'hà nội',
+        age:20,
+        phone:'555',
+        email:'minh@gmail.com'
+      }
+      obj1.name ='hoa'
+      let obj2={...obj1};
+      console.log(obj2)
+
+      console.log(obj1  == obj2)
+    </script>
+</body>
+</html>

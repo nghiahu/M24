@@ -1,0 +1,16 @@
+"use strict";
+let a = 6;
+let b = 3;
+let c;
+let result = a + b;
+console.log(result);
+c = result;
+result = a - b;
+console.log(result);
+c = result;
+result = a * b;
+console.log(result);
+c = result;
+result = a / b;
+console.log(result);
+c = result;

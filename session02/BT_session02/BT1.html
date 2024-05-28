@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       // function hasNegativeNumber(arr) {
+         //   for (let i = 0; i < arr.length; i++) {
+           //   if (arr[i] < 0) {
+             //   return true;
+              //}
+            //}
+            //return false;
+          //}     
+
+        //console.log(hasNegativeNumber([1, 2, 3])); 
+        //console.log(hasNegativeNumber([-1, 2, 3])); 
+
+        function hasNegativeNumber(arrs){
+          for(let arr of arrs){
+            let result = arrs.find(arr => arr < 0)
+            if(result){
+                return true;
+            }else{
+                return false;
+            }
+        }
+        }
+        console.log(hasNegativeNumber([1, 2, 3])); 
+        console.log(hasNegativeNumber([-1, 2, 3]));
+    </script>
+</body>
+</html>

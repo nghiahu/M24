@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let accouts = [
+        {
+            name:'minh',
+            password:'124335',
+            address:'hà nội'
+        },
+        {
+            name:'dũng',
+            password:'r534123',
+            address:'ninh bình'
+        },
+        {
+            name:'hoàng',
+            password:'57314',
+            address:'hcm'
+        },
+        ]
+
+        let result = accouts.some((item,index)=>{
+            return item.address === 'ninh bình'
+        })
+        if(result){
+            console.log("Có người ở ninh bình")
+        }else{
+            console.log("Không có người ở ninh bình")
+        }
+    </script>
+</body>
+</html>

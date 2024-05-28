@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let students = [
+        {
+            id:15,
+            name:"Minh",
+            adress:"Hà Nội",
+        },
+        {
+            id:17,
+            name:"Phương",
+            adress:"Bắc Ninh",
+        },
+        {
+            id:18,
+            name:"Linh",
+            adress:"Hải Phòng",
+        }
+        ]
+        // tìm kiếm Phương có trong array student
+
+        let result = students.find((index,item,aray)=>{
+          return index.name == "Phương"
+        })
+        console.log(result)
+    </script>
+</body>
+</html>

@@ -1,0 +1,87 @@
+.login{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: 1px solid rgb(181, 176, 176);
+    display: flex;
+    width: 50%;
+    height: auto;
+    margin-left:  25%;
+    margin-top: 10%;
+    .login_img img{
+        height: 450px;
+        width: 320px;
+        border-radius: 1%;
+    }
+    .login_from{
+        display: flex;
+        flex-direction: column;
+        padding-left: 25px;
+        padding-right: 225px;
+        .from{
+            .login_title{
+                color: rgb(51, 49, 49);
+                font-size: 18px;
+                font-weight: 700;
+                height: auto;
+            }
+            .login_email{
+                width: 300px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                gap: 10px;
+                font-size: 14px;
+                color: gray;
+                .name_inp{
+                    width: 300px;
+                    height: 35px;
+                    padding-left: 10px;
+                }
+
+        }
+            .login_pass{
+                width: 300px;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+                padding-top: 20px;
+                gap: 10px;
+                font-size: 14px;
+                color: gray;
+            }
+            .pass_inp{
+                width: 300px;
+                height: 35px;
+                padding-left: 10px;
+            }
+            .fogot{
+                margin-left: 170px;
+                font-size: 12px;
+                color: rgb(81, 77, 77);
+            }
+            .from_button{
+                background-color: rgb(22, 153, 190);
+                width: 300px;
+                height: 35px;
+                border-radius: 3%;
+                border: none;
+                color: #fff;
+            }
+        }
+        .bars{
+            text-align: center;
+            font-size: 12px;
+            color: grey;
+            margin-top: 40px;
+            border-bottom: 1px solid gray;
+            height: 1px;
+        }
+        .register{
+            height: 35px;
+            color: gray;
+            border-radius: 5%;
+            border-color: rgb(195, 191, 191);
+            margin-top: 20px;
+        }
+    }
+}

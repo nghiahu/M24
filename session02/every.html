@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+        every : tất cả
+        tức là tất cả cá phằn tử trong mảng thỏa mẵn kiều kiện
+        kêt quả trả về true / false
+        */
+        let numbers = [ 5,7,9,11,45]
+       let result =  numbers.every((item)=>{
+            return item > 5
+        })
+        console.log(result)
+
+
+        let students =[
+        {
+            name:"mai",
+            gender:"male",
+            address:"hn"
+        },
+        {
+            name:"nam",
+            gender:"female",
+            address:"hn"
+        },
+        {
+            name:"ngọc",
+            gender:"female",
+            address:"hn"
+        },
+        ]
+        let resultgender = students.every((item)=>{
+            return item.gender === "female"
+        })
+        let resultaddress = students.every((item)=>{
+            return item.address === "hn"
+        })
+        if(resultgender){
+            console.log("Tất cả học sinh là nam")
+        }else{
+            console.log("không phải tất cả học sinh đều là nam")
+        }
+
+        if(resultaddress){
+            console.log("tắt cả học sinh đều ở hà nội")
+        }else{
+            console.log("không phải tất cả học sinh đều ở hà nội")
+        }
+    </script>
+</body>
+</html>

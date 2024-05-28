@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*
+            reduce : tính tổng
+            thường thì dùng for:code dài hơn
+            */
+
+            let numbers = [1,2,3,4];
+            let sum = 0;
+            for(let i = 0;i < numbers.length;i++){
+                sum += numbers[i]
+            }
+            console.log(sum)
+            /*
+                accumulator: biến tích lũy
+            */
+            let total = numbers.reduce((accumulator,currentValue,array)=>{
+                return accumulator + currentValue
+            })
+            console.log(total)
+
+            let a = [5,6,7,8]
+            let total2 = a.reduce((i,j,k)=>{
+                return i + j
+            })
+            console.log(total2)
+
+            let products =[
+            {
+                name:"iphon5",
+                quantity:5,
+                price:2000
+            },
+            {
+                name:"iphon12",
+                quantity:6,
+                price:5000
+            },
+            {
+                name:"iphon5",
+                quantity:8,
+                price:8000
+            },
+            ]
+
+            let theCost = products.reduce((i,j,k)=>{
+               return i + (j.quantity * j.price)       
+            },0)
+            console.log(theCost)
+        </script>
+</body>
+</html>

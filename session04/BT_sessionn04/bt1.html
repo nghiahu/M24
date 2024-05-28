@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function sum(array){
+            let sumArr = 0;
+            for(arr of array){
+                if(arr %2 === 0){
+                    sumArr +=arr
+                }
+            }
+            return sumArr
+        }
+        console.log(sum([1, 2, 3, 4, 5, 6]))
+    </script>
+</body>
+</html>

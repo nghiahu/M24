@@ -1,0 +1,90 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.header{
+    width: 100%;
+    height: 56px;
+    background-color: rgb(144, 139, 139);
+    display: grid;
+    place-content: center;
+}
+.navbar{
+    width: 100%;
+    height: 36px;
+    background-color: rgb(210, 205, 205);
+    display: grid;
+    place-content: center;
+}
+.main{
+background-color: rgba(175, 72, 86, 0.871);
+height: calc(100vh - 92px);
+display: flex;
+}
+.menu{
+    width: 250px;
+    background-color: rgb(72, 175, 72);
+    display: grid;
+    place-content: center;
+}
+.List-cart{
+    flex: 1;
+    padding: 20px;
+    display:grid    ;
+    grid-template-columns: repeat(4, 1fr);
+    gap:20px;
+}
+.cart-item{
+    height: 64px;
+    background-color: white;
+    padding: 68px;
+    display: grid;
+    place-content: center;
+}
+.article{
+    width: 250px;
+    background-color: rgb(103, 103, 183);
+    display: grid;
+    place-content: center;
+}
+
+
+/*09*/
+.tableOut{
+    width: 80%;
+}
+.table_th{
+    height: 36px;
+    background-color: rgb(202, 194, 194);
+    color: rgb(145, 143, 140);
+}
+.table{
+    color: rgb(145, 143, 140);
+    text-align: center;
+    height: 70px;
+}
+.edit{
+    padding: 7px;
+    margin-right: 20px;
+}
+.delete{
+    padding: 9px;
+    background-color: red;
+    border: none;
+    color: wheat;
+}
+.tfoot{
+    height: 36px;
+    background-color: rgb(202, 194, 194);
+    width: 80%;
+}
+
